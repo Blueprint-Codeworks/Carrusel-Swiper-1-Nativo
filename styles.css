@@ -1,0 +1,169 @@
+/* Estilos Generales */
+body {
+  padding: 40px;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Contenedor Principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Títulos */
+.containerTitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-title {
+  color: #ccc;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  color: #a9a9a9;
+}
+
+/* Estilos Swiper */
+.swiper-container {
+  width: 80%;
+  height: 350px;
+  margin: 30px auto;
+  position: relative; /* Cambiado a relativo para pagination/navigation */
+  margin-bottom: 100px;
+}
+
+.swiper-slide {
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a9a9a956;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px; /* Espacio entre slides */
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 150px;
+  border-radius: 8px;
+}
+
+.slide-title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #ff8f00;
+}
+
+.slide-subtitle {
+  font-size: 1rem;
+  color: #bbb;
+}
+.swiper-pagination {
+  position: relative;
+
+  bottom: -90px !important;
+}
+/* Botones de Navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: orange !important;
+  position: relative !important;
+  bottom: 0px !important;
+  top: 100px !important;
+  right: 0px !important;
+  left: 100% !important;
+  margin: 0px 5px;
+  background-color: #1d1d1d;
+  border-radius: 100%;
+  padding: 10px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size:xx-large !important;
+}
+.swiper-pagination-bullet {
+  background: orange !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: orange;
+  top: auto;
+}
+
+/* Social Section */
+.social-section {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.blueprint-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.social-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #a9a9a9;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.social-icons a:hover .icon {
+  fill: #ff8f00;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .swiper-container {
+    height: 300px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .main-title {
+    font-size: 2em;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-container {
+    height: 250px;
+  }
+
+  .main-title {
+    font-size: 1.5em;
+  }
+
+  .swiper-slide {
+    font-size: 16px;
+  }
+}
